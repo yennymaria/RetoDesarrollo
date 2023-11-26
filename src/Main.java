@@ -7,10 +7,10 @@ public class Main {
         SegundoReto segundo = new SegundoReto();
         TercerReto tercer = new TercerReto();
         int s = 5;
-        ArrayList<Integer> numeros = new ArrayList<>(Arrays.asList(150,567,953));
+        ArrayList<Integer> numeros = new ArrayList<>(Arrays.asList(150,567,953,40));
 
-        //primer.cambiarPosiciones(numeros,s);
-        //System.out.println(primer.getInvertidos());
+        primer.cambiarPosiciones(numeros,s);
+        System.out.println(primer.getInvertidos());
 
         //segundo.cuadrados(numeros,s);
         //System.out.println(segundo.getCuadrados());
