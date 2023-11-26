@@ -26,23 +26,6 @@ public class SegundoReto {
         }
         return enteros;
     }
-    public void bubbleSort(ArrayList<Integer> array) {
-        int n = array.size();
-        boolean cambio;
-        do {
-            cambio = false;
-            for (int i = 1; i < n; i++) {
-                if (array.get(i - 1) > array.get(i)) {
-                    int mayor = array.get(i - 1);
-                    array.set((i - 1),array.get(i));
-                    array.set(i,mayor);
-                    cambio = true;
-                }
-            }
-            n--;
-        } while (cambio);
-    }
-
     public void mergeSort(ArrayList<Integer> list) {
         if (list.size() <= 1) {
             return; // La lista ya está ordenada si tiene 0 o 1 elemento
